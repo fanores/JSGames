@@ -1,0 +1,1 @@
+console.log("Hello, from JS console, from external JS file.");
