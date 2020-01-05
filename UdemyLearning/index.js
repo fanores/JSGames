@@ -13,3 +13,13 @@ console.log(number += 5);
 
 var result = (number < 100) ? 'yes' : 'no';
 console.log(result);
+
+// Lesson #4: If statement
+var age = prompt('Enter age:');
+if (age >= 18) {
+    console.log('User is an adult.');
+} else if (age <= 18) {
+    console.log('User is not an adult.');
+} else {
+    console.log('Enter a valid number.')
+}
