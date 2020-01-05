@@ -23,3 +23,16 @@ if (age >= 18) {
 } else {
     console.log('Enter a valid number.')
 }
+
+// Lesson $5: Switch statement
+var month = prompt('Enter month name:');
+switch (month) {
+    case 'July':
+        console.log('Summer');
+        break;
+    case 'August':
+        console.log('Summer again');
+        break;
+    default:
+        console.log('Other months');
+};
