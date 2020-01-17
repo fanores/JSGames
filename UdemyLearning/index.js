@@ -36,3 +36,16 @@ switch (month) {
     default:
         console.log('Other months');
 };
+
+// Lesson $6: Function
+function showMessageInLog(text) {
+    console.log('Message: ' + text);
+}
+
+showMessageInLog('Test');
+
+function multipyNumber(number1, number2) {
+    return number1 * number2;
+}
+
+showMessageInLog(multipyNumber(3, 3));
