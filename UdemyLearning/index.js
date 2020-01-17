@@ -49,3 +49,15 @@ function multipyNumber(number1, number2) {
 }
 
 showMessageInLog(multipyNumber(3, 3));
+
+// Lesson $7: Objects and Methods
+var randomPerson = {
+    firstName: 'Kevin',
+    lastName: 'Random',
+
+    sayName: function() {
+        return this.firstName + ' ' + this.lastName;
+    }
+};
+
+showMessageInLog(randomPerson.sayName());
