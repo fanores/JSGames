@@ -69,3 +69,7 @@ console.log(myText.replace('just', 'JUST'));
 
 var myNumber = 13;
 console.log(myNumber.toString(2)); // binary representation of number
+
+// Lesson #9: Arrays
+var myArray = ['Adam', 'Kevin', 'Bob'];
+console.log(myArray[0]); // print out 1st item from array
