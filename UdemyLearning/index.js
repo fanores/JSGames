@@ -73,3 +73,10 @@ console.log(myNumber.toString(2)); // binary representation of number
 // Lesson #9: Arrays
 var myArray = ['Adam', 'Kevin', 'Bob'];
 console.log(myArray[0]); // print out 1st item from array
+
+// Lesson #10: Array Functions
+console.log('Length of an Array: ' + myArray.length);
+myArray.push('Betty'); // insert item at the end
+console.log(myArray.sort());
+myArray.pop(); // remove last item from array
+console.log(myArray.sort());
