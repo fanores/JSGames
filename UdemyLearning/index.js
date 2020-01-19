@@ -61,3 +61,11 @@ var randomPerson = {
 };
 
 showMessageInLog(randomPerson.sayName());
+
+// Lesson #8: String and Number Methods
+var myText = 'This is just a string!';
+console.log('String length: ' + myText.length);
+console.log(myText.replace('just', 'JUST'));
+
+var myNumber = 13;
+console.log(myNumber.toString(2)); // binary representation of number
