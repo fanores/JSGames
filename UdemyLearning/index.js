@@ -80,3 +80,20 @@ myArray.push('Betty'); // insert item at the end
 console.log(myArray.sort());
 myArray.pop(); // remove last item from array
 console.log(myArray.sort());
+
+// Lesson #11: Loops
+for (var i = 0; i < 3; i++) {
+    console.log('For Loop item: ' + i);
+}
+
+var myWhileVariable = 0;
+while (myWhileVariable < 3) {
+    console.log('While item: ' + myWhileVariable);
+    myWhileVariable++;
+}
+
+var myDoVariable = 0;
+do {
+    console.log('Do item: ' + myDoVariable);
+    myDoVariable++;
+} while (myDoVariable < 3);
