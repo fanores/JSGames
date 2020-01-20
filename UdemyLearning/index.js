@@ -97,3 +97,18 @@ do {
     console.log('Do item: ' + myDoVariable);
     myDoVariable++;
 } while (myDoVariable < 3);
+
+// Lesson #12: Break and Continue
+for (var i = 0; i < 10; i++) {
+    if (i == 3) {
+        console.log('Loop terminated at: ' + i);
+        break; // terminate for loop for further processing
+    }
+}
+
+for (var i = 0; i < 10; i++) {
+    if (i == 3) {
+        console.log('Loop skipped at: ' + i);
+        continue; // skip one itteration in the loop
+    }
+}
