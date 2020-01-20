@@ -112,3 +112,15 @@ for (var i = 0; i < 10; i++) {
         continue; // skip one itteration in the loop
     }
 }
+
+// Lesson #13: Advanced For Loops
+var myLoopedObject = { fname: 'firstName', lname: 'lastName' };
+for (var x in myLoopedObject) {
+    console.log('Object property name: ' + x);
+    console.log('Object property value: ' + myLoopedObject[x]);
+}
+
+var myLoopedAray = ['1', 'A', '2'];
+for (var x of myLoopedAray) {
+    console.log('Looped array item value: ' + myLoopedAray);
+}
