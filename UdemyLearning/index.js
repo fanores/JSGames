@@ -124,3 +124,18 @@ var myLoopedAray = ['1', 'A', '2'];
 for (var x of myLoopedAray) {
     console.log('Looped array item value: ' + myLoopedAray);
 }
+
+// Lesson #17: Object Constructor
+function Student(fName, lName, age) {
+    this.fName = fName;
+    this.lName = lName;
+    this.age = age;
+
+    this.getFullName = function() {
+        return this.fName + ' ' + this.lName;
+    }
+}
+
+var student1 = new Student('Adam', 'Smint', 33);
+console.log(student1);
+console.log(student1.getFullName());
