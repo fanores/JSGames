@@ -148,3 +148,7 @@ Student.prototype.getAge = function() {
 var student2 = new Student('Bety', 'Sue', 22);
 console.log(student2.getFullName());
 console.log(student2.getAge());
+
+// Lesson :20: Prototype chain
+console.log('Has student AGE property: ' + student2.hasOwnProperty('age'));
+console.log('Has student HEIGHT property: ' + student2.hasOwnProperty('height'));
