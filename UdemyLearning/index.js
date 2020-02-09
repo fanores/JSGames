@@ -139,3 +139,12 @@ function Student(fName, lName, age) {
 var student1 = new Student('Adam', 'Smint', 33);
 console.log(student1);
 console.log(student1.getFullName());
+
+// Lesson #19: Object Prototypes
+// Define prototype method for the above object Student
+Student.prototype.getAge = function() {
+    return this.age;
+};
+var student2 = new Student('Bety', 'Sue', 22);
+console.log(student2.getFullName());
+console.log(student2.getAge());
