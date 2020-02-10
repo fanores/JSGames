@@ -166,3 +166,20 @@ const myBono = Object.create(dogProto, {
 });
 
 console.log(myBono);
+
+// Lesson #22: Classes
+class Employee {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    printEmployee() {
+        console.log('Employee ID: ' + this.id + '; Employee Name: ' + this.name)
+    }
+}
+
+var myEmployee = new Employee(1, 'Employee1');
+myEmployee.printEmployee();
+console.log(typeof Employee); // just to show that a class is in fact a function
+console.log(Object.getOwnPropertyNames(Employee.prototype));
