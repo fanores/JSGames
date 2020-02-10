@@ -152,3 +152,17 @@ console.log(student2.getAge());
 // Lesson :20: Prototype chain
 console.log('Has student AGE property: ' + student2.hasOwnProperty('age'));
 console.log('Has student HEIGHT property: ' + student2.hasOwnProperty('height'));
+
+// Lesson #21: Object.create
+const dogProto = {
+    dogDescription: function() {
+        return this.dogBreed + ':' + this.dogName;
+    }
+}
+
+const myBono = Object.create(dogProto, {
+    dogBreed: { value: 'Retriever' },
+    dogName: { value: 'Bono' }
+});
+
+console.log(myBono);
