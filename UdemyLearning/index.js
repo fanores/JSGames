@@ -183,3 +183,23 @@ var myEmployee = new Employee(1, 'Employee1');
 myEmployee.printEmployee();
 console.log(typeof Employee); // just to show that a class is in fact a function
 console.log(Object.getOwnPropertyNames(Employee.prototype));
+
+// Lesson #23: Call and Apply
+var animal = {
+    getDetails: function(age, color) {
+        return this.breed + "-" + this.name + "-" + age + "-" + color;
+    }
+}
+
+var buldog = {
+    breed: 'buldog',
+    name: 'Sandy'
+}
+
+var puddle = {
+    breed: 'puddle',
+    name: 'Dingo'
+}
+
+console.log(animal.getDetails.call(buldog, 2, 'brown'));
+console.log(animal.getDetails.apply(puddle, [3, 'yellow']));
