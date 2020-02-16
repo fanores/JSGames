@@ -10,3 +10,20 @@ h3 {
 .h5 {
     color: purple;
 }
+
+.testDiv {
+    border: 10px solid red;
+    background-color: grey;
+    padding: 5px;
+}
+
+.testdiv,
+h2,
+h4 {
+    color: blue;
+    text-align: center;
+}
+
+#country {
+    color: red;
+}
