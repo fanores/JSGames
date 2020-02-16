@@ -26,12 +26,19 @@
     <a href="https://www.google.com">Go to Google</a>
 
     <div class="testDiv">
-        <h2>Paris</h2>
+        <h2 id="cityId">Paris</h2>
         <h4>A beautiful city in <span id="country">France.</span></h4>
+    </div>
+
+    <div>
+        <button type="button" onclick="document.getElementById('cityId').style.color= 'orange'">Change to orange!</button>
     </div>
 
     <script>
         console.log("Hello, from JS console, within HTML.");
+        console.log(document.getElementById("cityId").innerHTML = 'Bordeau');
+        document.getElementById("cityId").style.color = 'purple';
+        document.write(Date());
     </script>
     <script src="index.js" charset="utf-8"></script>
 </body>
