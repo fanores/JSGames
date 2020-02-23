@@ -203,3 +203,27 @@ var puddle = {
 
 console.log(animal.getDetails.call(buldog, 2, 'brown'));
 console.log(animal.getDetails.apply(puddle, [3, 'yellow']));
+
+// Lesson #29: Events and Event Handler
+function onBtnClick() {
+    alert('Button clicked on Event Click.');
+}
+
+document.getElementById("eventButton").onclick = onBtnClick;
+
+function setMyInputToUpper() {
+    var myInput = document.getElementById("myInput");
+    myInput.value = myInput.value.toUpperCase();
+
+}
+
+document.getElementById("myInput").onchange = setMyInputToUpper;
+
+function sayHello() {
+    alert("Hello!");
+}
+
+// document.getElementById("clickMeBtn").addEventListener("click", sayHello);
+document.getElementById("clickMeBtn").addEventListener("click", function() {
+    sayHello();
+});
